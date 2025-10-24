@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "name": "Главная сцена",
+    "city": "Москва",
+    "address": "Тверская, 1",
+    "seatingMap": {
+      "rows": 8,
+      "cols": 12,
+      "zones": [
+        {
+          "name": "Партер",
+          "rows": [
+            1,
+            4
+          ],
+          "priceFactor": 1.2
+        },
+        {
+          "name": "Амфитеатр",
+          "rows": [
+            5,
+            8
+          ],
+          "priceFactor": 1.0
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "name": "Малая сцена",
+    "city": "Санкт-Петербург",
+    "address": "Невский, 12",
+    "seatingMap": {
+      "rows": 6,
+      "cols": 10,
+      "zones": [
+        {
+          "name": "Партер",
+          "rows": [
+            1,
+            3
+          ],
+          "priceFactor": 1.1
+        },
+        {
+          "name": "Балкон",
+          "rows": [
+            4,
+            6
+          ],
+          "priceFactor": 0.9
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "name": "Экспериментальная площадка",
+    "city": "Казань",
+    "address": "Баумана, 5",
+    "seatingMap": {
+      "rows": 5,
+      "cols": 9,
+      "zones": [
+        {
+          "name": "Зал",
+          "rows": [
+            1,
+            5
+          ],
+          "priceFactor": 1.0
+        }
+      ]
+    }
+  }
+]

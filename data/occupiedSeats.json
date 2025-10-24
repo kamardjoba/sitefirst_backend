@@ -1,0 +1,45 @@
+[
+  {
+    "sessionId": 101,
+    "seats": [
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 5
+      }
+    ]
+  },
+  {
+    "sessionId": 201,
+    "seats": [
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 2,
+        "col": 1
+      }
+    ]
+  },
+  {
+    "sessionId": 401,
+    "seats": [
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 12
+      }
+    ]
+  }
+]

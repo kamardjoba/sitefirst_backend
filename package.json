@@ -1,0 +1,21 @@
+{
+  "name": "theatre-backend-pg",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/server_pg.js",
+    "dev": "nodemon --watch src --ext js,json --exec node src/server_pg.js",
+    "seed": "node src/seed_pg.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.7",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "code": "SALE10",
+    "discountPercent": 10,
+    "validUntilISO": "2025-12-31T23:59:59.000Z"
+  },
+  {
+    "code": "WELCOME5",
+    "discountPercent": 5,
+    "validUntilISO": "2025-12-31T23:59:59.000Z"
+  }
+]
