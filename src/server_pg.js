@@ -3,7 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import morgan from 'morgan'
 import { pool, tx } from './db_pool.js'
-import { pool, tx } from './db_pool.js'
+
 
 // ---- CHECK DATABASE CONNECTION ----
 console.log('[DB] Checking connection...')
