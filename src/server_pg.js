@@ -3,6 +3,32 @@ import express from 'express'
 import cors from 'cors'
 import morgan from 'morgan'
 import { pool, tx } from './db_pool.js'
+import { pool, tx } from './db_pool.js'
+
+// ---- CHECK DATABASE CONNECTION ----
+console.log('[DB] Checking connection...')
+if (!process.env.DATABASE_URL) {
+  console.error('[DB] ❌ DATABASE_URL not set!')
+} else {
+  console.log('[DB] DATABASE_URL:', process.env.DATABASE_URL.replace(/:[^:@]+@/, '://***:***@'))
+  console.log('[DB] SSL mode:', process.env.PGSSL || '(default: enabled)')
+}
+
+try {
+  const client = await pool.connect()
+  const { rows } = await client.query('SELECT NOW() as now')
+  console.log('[DB] ✅ Connected successfully at', rows[0].now)
+  client.release()
+} catch (err) {
+  console.error('[DB] ❌ Connection failed:')
+  console.error('  name:', err.name)
+  console.error('  code:', err.code)
+  console.error('  message:', err.message)
+  console.error('  host:', err?.address || '(none)')
+  console.error('  port:', err?.port || '(none)')
+}
+console.log('----------------------------------')
+// ---- END CHECK DATABASE CONNECTION ----
 import { customAlphabet } from 'nanoid'
 
 const nanoid = customAlphabet('23456789ABCDEFGHJKLMNPQRSTUVWXYZ', 10)
