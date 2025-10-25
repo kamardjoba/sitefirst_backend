@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node src/server_pg.js",
-    "dev": "nodemon --watch src --ext js,json --exec node src/server_pg.js",
+    "start": "node src/check_and_seed_pg.js && node src/server_pg.js",
+    "dev": "nodemon --watch src --ext js,json --exec \"node src/check_and_seed_pg.js && node src/server_pg.js\"",
     "seed": "node src/seed_pg.js"
   },
   "dependencies": {
